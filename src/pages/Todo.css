@@ -1,0 +1,126 @@
+/* ===== GLOBAL STYLE ===== */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== CONTAINER ===== */
+.todo-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease-in-out;
+}
+
+.todo-container:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== TITLE ===== */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* ===== FORM ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="date"] {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #4b8bf4;
+  box-shadow: 0 0 5px rgba(75, 139, 244, 0.3);
+}
+
+/* ===== BUTTONS ===== */
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+button[type="submit"] {
+  background: #4b8bf4;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background: #2f6fe0;
+}
+
+button[type="button"] {
+  background: #e8e8e8;
+}
+
+button[type="button"]:hover {
+  background: #d4d4d4;
+}
+
+/* ===== TODO LIST ===== */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #fafafa;
+  padding: 14px 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-left: 5px solid #4b8bf4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.25s ease;
+}
+
+li:hover {
+  background: #f0f4ff;
+}
+
+li strong {
+  color: #333;
+}
+
+li button {
+  margin-left: 5px;
+  background: #4b8bf4;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+li button:hover {
+  background: #2f6fe0;
+}
+
+li button:last-child {
+  background: #ff5d5d;
+}
+
+li button:last-child:hover {
+  background: #e74848;
+}

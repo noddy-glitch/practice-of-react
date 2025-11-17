@@ -1,0 +1,83 @@
+/* FULL SCREEN CENTER */
+.calc-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+}
+
+/* CALCULATOR BOX */
+.calc {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  width: 300px;
+}
+
+/* DISPLAY */
+.display {
+  width: 100%;
+  padding: 15px;
+  font-size: 32px;
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  text-align: right;
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+}
+
+/* BUTTON GRID */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* BUTTONS STYLE */
+.btn {
+  padding: 18px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: rgba(255,255,255,0.35);
+}
+
+/* OPERATOR BUTTONS */
+.operator {
+  background: #ff9f43;
+}
+
+.operator:hover {
+  background: #ffbf70;
+}
+
+/* CLEAR BUTTON */
+.clear {
+  grid-column: span 2;
+  background: #e74c3c;
+}
+
+.clear:hover {
+  background: #ff6b5a;
+}
+
+/* EQUALS BUTTON */
+.equals {
+  grid-column: span 2;
+  background: #20bf6b;
+}
+
+.equals:hover {
+  background: #34d787;
+}

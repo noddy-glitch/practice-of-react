@@ -1,0 +1,152 @@
+/* ========== GLOBAL RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  min-height: 100vh;       
+  background: #f2f2f2;     
+}
+
+
+.todo-app {
+  max-width: 500px;
+  margin: 0px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.todo-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.todo-input {
+  padding: 12px;
+  border: 1px solid #d7dce3;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.todo-input:focus {
+  border-color: #4a78ff;
+  box-shadow: 0 0 5px rgba(74, 120, 255, 0.3);
+}
+
+.todo-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.btn-primary {
+  background: #4a78ff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #335eea;
+}
+
+.btn-secondary {
+  background: #dfe3eb;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background: #c8ccd6;
+}
+
+.btn-edit {
+  background: #4a78ff;
+  color: white;
+}
+
+.btn-edit:hover {
+  background: #3257d3;
+}
+
+.btn-delete {
+  background: #ff5f5f;
+  color: white;
+}
+
+.btn-delete:hover {
+  background: #e64545;
+}
+
+.todo-list-title {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-size: 20px;
+}
+
+.todo-list {
+  list-style: none;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.7;
+}
+
+.todo-item {
+  background: #f9faff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 6px solid #4a78ff;
+  transition: 0.25s ease;
+}
+
+.todo-item:hover {
+  background: #eef2ff;
+}
+
+.todo-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-task {
+  font-size: 17px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.todo-description,
+.todo-date {
+  font-size: 14px;
+  color: #6b7588;
+}

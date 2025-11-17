@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "firstname": "abuowdhvafjga",
+      "username": "vahfdhewgf",
+      "password": "qeWR",
+      "gender": "Male",
+      "hobbies": [
+        "Cricket",
+        "Coding"
+      ],
+      "id": "d8ab"
+    },
+    {
+      "id": "a384",
+      "firstname": "sdfg",
+      "username": "sdfgh",
+      "password": "dfgh",
+      "gender": "Male",
+      "hobbies": [
+        "Coding",
+        "Music"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+/* General page styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  padding: 40px;
+}
+
+/* Form styling */
+form {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 400px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #4d4d4d;
+}
+
+form input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  color: #333;
+  background-color: #ccc;  
+  font-size: 15px;
+  margin-top: 5px;
+  transition: border 0.2s ease-in-out;
+}
+
+form input:focus {
+  border-color: #4a90e2;
+}
+
+/* Button styling */
+form button {
+  background: #4a90e2;
+  color: white;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+form button:hover {
+  background: #357abd;
+}
+
+/* Table styling */
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+thead {
+  background: #4a90e2;
+  color: white;
+  font-weight: 600;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+
+td {
+  color: #555;
+}
+
+.butttons{
+    display: flex;
+    
+    margin: 2px;
+
+}
+/* Empty state message */
+.empty-message {
+  text-align: center;
+  /* color: #777; */
+  font-style: italic;
+  margin-top: 20px;
+}

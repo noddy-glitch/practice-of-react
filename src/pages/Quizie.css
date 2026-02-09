@@ -1,0 +1,89 @@
+/* Background */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #181d33, #23395d);
+  color: white;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Container */
+.container {
+  width: 90%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Card Box */
+.quiz-box, .result-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  backdrop-filter: blur(8px);
+  text-align: center;
+   width: 100%;
+  margin: auto;
+  
+}
+
+/* Question Text */
+.question {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* Options */
+.option-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: #00b4ff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.option-btn:hover {
+  background: #0088cc;
+  transform: scale(1.02);
+}
+
+/* Progress Text */
+.progress {
+  margin-top: 15px;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+/* Result Box Text */
+.score {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+
+.restart-btn {
+  background: #ff4e77;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.restart-btn:hover {
+  background: #d93a63;
+}

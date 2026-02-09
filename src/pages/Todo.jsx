@@ -55,7 +55,7 @@ const TodoApp = () => {
         ? { ...todo, completed: !todo.completed }
         : todo
     )
-  );
+  ); 
 };
 
 

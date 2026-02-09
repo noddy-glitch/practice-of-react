@@ -1,83 +1,91 @@
-/* FULL SCREEN CENTER */
+/* Center the calculator */
 .calc-container {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  background: linear-gradient(135deg, #232526, #414345);
 }
 
-/* CALCULATOR BOX */
-.calc {
-  background: rgba(255, 255, 255, 0.1);
+/* Calculator box */
+.calc-box {
+  background: rgba(196, 191, 191, 0.08);
   padding: 25px;
+  width: 350px;
   border-radius: 20px;
   backdrop-filter: blur(12px);
-  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-  width: 300px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
 }
 
-/* DISPLAY */
+/* Display screen */
 .display {
   width: 100%;
-  padding: 15px;
-  font-size: 32px;
-  border: none;
-  margin-bottom: 15px;
+  height: 70px;
   border-radius: 10px;
+  background: #333;
+  color: #0f0;
+  font-size: 2rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
   text-align: right;
-  background: rgba(0,0,0,0.4);
-  color: #fff;
+  letter-spacing: 2px;
 }
 
-/* BUTTON GRID */
-.buttons {
+/* Grid layout for buttons */
+.btn-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
 }
 
-/* BUTTONS STYLE */
+/* Common button style */
 .btn {
-  padding: 18px;
-  font-size: 20px;
+  background: #222;
   border: none;
-  border-radius: 10px;
-  background: rgba(255,255,255,0.2);
+  padding: 18px;
+  border-radius: 12px;
   color: white;
-  cursor: pointer;
+  font-size: 1.2rem;
   transition: 0.2s;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
 }
 
+/* Hover effect */
 .btn:hover {
-  background: rgba(255,255,255,0.35);
+  background: #333;
+  transform: translateY(-3px);
 }
 
-/* OPERATOR BUTTONS */
+/* Operator buttons */
 .operator {
-  background: #ff9f43;
+  background: #ff9500;
 }
 
 .operator:hover {
-  background: #ffbf70;
+  background: #e08900;
 }
 
-/* CLEAR BUTTON */
-.clear {
-  grid-column: span 2;
-  background: #e74c3c;
-}
-
-.clear:hover {
-  background: #ff6b5a;
-}
-
-/* EQUALS BUTTON */
+/* equals button */
 .equals {
-  grid-column: span 2;
-  background: #20bf6b;
+  background: #28a745;
 }
 
 .equals:hover {
-  background: #34d787;
+  background: #218838;
+}
+
+/* zero button spans 2 columns */
+.zero {
+  grid-column: span 2;
+}
+
+/* Clear buttons */
+.danger {
+  background: #ff3b30;
+}
+
+.warning {
+  background: #ffcc00;
 }
